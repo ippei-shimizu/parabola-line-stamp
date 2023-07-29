@@ -1,1 +1,26 @@
-@use "./header";
+@use "../setting/index" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "BalooBhainaOdia";
+  src: url("BalooBhainaOdia.ttc");
+}
+
+@font-face {
+  font-family: "GomariceKaijuMonster";
+  src: url("gomarice_kaiju_monster.ttf");
+}
+
+body {
+  font-family: "BalooBhainaOdia", "GomariceKaijuMonster", sans-serif;
+}
