@@ -1,5 +1,26 @@
-
+// color
+$bg-light: #dcdddd;
+$bg-light-fv: #c9caca;
+$text-gray: #c9caca;
+$color-text: #595757;
 
 // font-family
 $family-boloo: "BalooBhainaOdia";
-$family-gorarice-kaiju: "gomarice_kaiju_monster";
+$family-gorarice-kaiju: "GomariceKaijuMonster";
+$family-APJapanese: "APJapanesefont";
+$familu-shuei: "dnp-shuei-mgothic-std";
+
+//メディアクエリ
+@mixin media($breakpoint: md) {
+  @media #{map-get($breakpoint-up,$breakpoint)} {
+    @content;
+  }
+}
+//ブレイクポイント
+$breakpoint-up: (
+  'min1980': 'screen and (min-width:1980px)',
+  'bp1200': 'screen and (max-width:1200px)',
+  'bp924': 'screen and (max-width:924px)',
+  'bp860': 'screen and (max-width:860px)',
+  'bp760': 'screen and (max-width:760px)',
+) !default;

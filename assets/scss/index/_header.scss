@@ -13,14 +13,24 @@ html {
 
 @font-face {
   font-family: "BalooBhainaOdia";
-  src: url("BalooBhainaOdia.ttc");
+  src: url("../fonts/BalooBhainaOdia.ttc");
 }
 
 @font-face {
   font-family: "GomariceKaijuMonster";
-  src: url("gomarice_kaiju_monster.ttf");
+  src: url("../fonts/gomarice_kaiju_monster.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "APJapanesefont";
+  src: url("../fonts/APJapanesefont.ttf") format("truetype");
 }
 
 body {
-  font-family: "BalooBhainaOdia", "GomariceKaijuMonster", sans-serif;
+  font-family: "dnp-shuei-mgothic-std", "BalooBhainaOdia", "GomariceKaijuMonster", "APJapanesefont",sans-serif;
+  background-color: $bg-light;
+}
+
+img {
+  height: auto;
 }

@@ -1,0 +1,75 @@
+@use "../setting/index" as *;
+
+.about {
+  &__inner {
+    max-width: 1980px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 270px 0 18px;
+  }
+}
+
+.about__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin-bottom: 70px;
+  img {
+    display: block;
+    animation: charBalloonRotateChar .5s steps(2,jump-none) infinite alternate;
+  }
+}
+
+.about__img__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__img__01 {
+  transform: rotate(-4deg);
+}
+
+.about__img__04 {
+  transform: rotate(18deg);
+  position: relative;
+  top: 58px;
+}
+
+.about__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+}
+
+.about__text__box {
+  color: $color-text;
+  text-align: center;
+  .about__title {
+    font-size: 47px;
+    font-weight: bold;
+    line-height: 1.4em;
+    margin-bottom: 78px;
+    opacity: 0;
+  }
+  .about__text {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.8em;
+    opacity: 0;
+  }
+}
+
+.about__img__05 {
+  transform: rotate(-8deg);
+  position: relative;
+  top: -35px;
+}
+
+.about__img__06 {
+  transform: rotate(14deg);
+  position: relative;
+  top: 28px;
+}
