@@ -4,6 +4,9 @@
   overflow: hidden;
   &__inner {
     padding-bottom: 260px;
+    @include media(bp767) {
+      padding-bottom: 114px;
+    }
   }
 }
 
@@ -12,32 +15,88 @@
   grid-template-columns: 190px 1fr 190px;
   justify-content: space-between;
   align-items: center;
+  @include media(bp1024) {
+    grid-template-columns: 86px 1fr 86px;
+  }
+  @include media(bp767) {
+    display: block;
+    .price__char__box {
+      display: none;
+    }
+  }
 }
 
 .price__title {
   margin-bottom: 36px;
+  @include media(bp767) {
+    margin-bottom: 14px;
+  }
 }
 
 .price__title__one {
   display: inline-block;
+  &:nth-child(1) {
+    @include media(bp1024) {
+      img {
+        width: 60px;
+      }
+    }
+    @include media(bp767) {
+      img {
+        width: 30px;
+      }
+    }
+  }
   &:nth-child(2) {
-    img {
-      left: -4px;
+    @include media(bp1024) {
+      img {
+        left: -4px;
+        width: 62px;
+      }
+    }
+    @include media(bp767) {
+      img {
+        width: 31px;
+      }
     }
   }
   &:nth-child(3) {
-    img {
-      left: -8px;
+    @include media(bp1024) {
+      img {
+        left: -8px;
+        width: 28px;
+      }
+    }
+    @include media(bp767) {
+      img {
+        width: 14px;
+      }
     }
   }
   &:nth-child(4) {
-    img {
-      left: -12px;
+    @include media(bp1024) {
+      img {
+        left: -12px;
+        width: 60px;
+      }
+    }
+    @include media(bp767) {
+      img {
+        width: 30px;
+      }
     }
   }
   &:nth-child(5) {
-    img {
-      left: -16px;
+    @include media(bp1024) {
+      img {
+        left: -16px;
+        width: 56px;
+      }
+    }
+    @include media(bp767) {
+      img {
+        width: 28px;
+      }
     }
   }
   img {
@@ -65,11 +124,17 @@
         padding-left: 8px;
       }
     }
-  } 
+  }
   .sub__text {
     text-align: center;
     padding-top: 12px;
     padding-bottom: 36px;
+    @include media(bp767) {
+      font-size: 10px;
+      padding-top: 7px;
+      text-align: left;
+      padding-bottom: 12px;
+    }
   }
 }
 
@@ -79,6 +144,10 @@
   background-color: #fff;
   padding: 8px 20px;
   display: flex;
+  @include media(bp767) {
+    border-width: 3px;
+    padding: 3px 7px;
+  }
 }
 
 .price__inner__menu {
@@ -91,6 +160,18 @@
   width: 230px;
   text-align: center;
   line-height: 1;
+  @include media(bp1100) {
+    font-size: 28px;
+  }
+  @include media(bp1024) {
+    font-size: 24px;
+    width: 152px;
+  }
+  @include media(bp767) {
+    font-size: 17px;
+    width: 83px;
+    padding: 1px 0px 4px;
+  }
 }
 
 .price__text {
@@ -98,10 +179,31 @@
   font-family: $family-a-otf-jun-pro;
   font-size: 48px;
   margin-left: 10%;
+  @include media(bp1100) {
+    font-size: 28px;
+  }
+  @include media(bp1024) {
+    margin-left: 5%;
+    font-size: 24px;
+  }
+  @include media(bp767) {
+    font-size: 17px;
+    margin-left: 30px;
+  }
   span {
     font-size: 35px;
     font-family: $family-a-otf-jun-pro;
     padding-left: 34px;
+    @include media(bp1100) {
+      font-size: 20px;
+    }
+    @include media(bp1024) {
+      font-size: 16px;
+      padding-left: 20px;
+    }
+    @include media(bp767) {
+      display: none;
+    }
   }
 }
 
@@ -110,6 +212,10 @@
   font-family: $family-a-otf-jun-pro;
   color: #000;
   line-height: 1.6em;
+  @include media(bp767) {
+    font-size: 10px;
+    padding-top: 0;
+  }
 }
 
 .sub__text__01 {
@@ -135,13 +241,49 @@
   }
 }
 
+.price__char {
+  &__01 {
+    @include media(bp1024) {
+      width: 120px;
+    }
+  }
+  &__02 {
+    @include media(bp1024) {
+      width: 90px;
+    }
+  }
+  &__03 {
+    @include media(bp1024) {
+      width: 70px;
+    }
+  }
+  &__04 {
+    @include media(bp1024) {
+      width: 120px;
+    }
+  }
+  &__05 {
+    @include media(bp1024) {
+      width: 90px;
+    }
+  }
+  &__06 {
+    @include media(bp1024) {
+      width: 70px;
+    }
+  }
+}
+
 .char__bg {
   background-color: #fff;
   padding: 52px 0;
   overflow: hidden;
   .char__bg__img {
     width: 379vw;
-    animation :infinity-scroll-right 25s infinite linear 0.5s both;
+    animation: infinity-scroll-right 25s infinite linear 0.5s both;
+    @include media(bp767) {
+      width: 366vw;
+    }
   }
 }
 
@@ -160,4 +302,12 @@
   width: fit-content;
   transform: translate(2rem, -16rem);
   opacity: 0;
+  @include media(bp767) {
+    margin: 16px 10% 0 auto;
+  }
+  img {
+    @include media(bp1024) {
+      width: 124px;
+    }
+  }
 }

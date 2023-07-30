@@ -35,3 +35,71 @@ body {
 img {
   height: auto;
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 5%;
+  z-index: 999;
+  @include media(bp767) {
+    right: 18px;
+  }
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 83px;
+  height: 43px;
+  background: #3eac4a;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  position: relative;
+  @include media(bp767) {
+    width: 30px;
+    height: 15px;
+  }
+}
+
+label:after {
+  content: "";
+  background: #fff;
+  width: 33px;
+  height: 33px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+  @include media(bp767) {
+    width: 11px;
+    height: 11px;
+    top: 2px;
+  }
+}
+
+input:checked + label {
+  background: #ab9aba;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}

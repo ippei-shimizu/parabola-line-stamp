@@ -61,6 +61,7 @@
             <img class="icon-animation icon-20" src="<?php echo get_template_directory_uri(); ?>/assets/images/mega.svg" alt="イラスト" width="134px" height="153px">
             <img class="icon-animation-reverse icon-21" src="<?php echo get_template_directory_uri(); ?>/assets/images/camera.svg" alt="イラスト" width="130px" height="134px">
             <img class="icon-animation icon-22" src="<?php echo get_template_directory_uri(); ?>/assets/images/in.svg" alt="イラスト" width="96px" height="95px">
+            <img class="icon icon-23" src="<?php echo get_template_directory_uri(); ?>/assets/images/fff.svg" alt="イラスト" width="49px" height="23px">
           </div>
         </div>
       </div>
@@ -73,6 +74,22 @@
 
 <section class="about">
   <div class="about__inner">
+    <div class="about__top__sp">
+      <div class="price__char__box price__char__box__left">
+        <img class="price__char price__char__01" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_09.png" alt="キャラクター" width="230px" height="268px" loading="lazy">
+        <img class="price__char price__char__02" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_10.png" alt="キャラクター" width="204px" height="247px" loading="lazy">
+        <img class="price__char price__char__03" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_11.png" alt="キャラクター" width="115px" height="217px" loading="lazy">
+      </div>
+      <h2 class="about__title scrollUpText">スタンプ村では<br>
+  クリエーターたちが<br>
+  オリジナルキャラクターの<br>
+  スタンプを制作するよ</h2>
+      <div class="price__char__box price__char__box__right">
+        <img class="price__char price__char__04" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_09.png" alt="キャラクター" width="230px" height="268px" loading="lazy">
+        <img class="price__char price__char__05" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_10.png" alt="キャラクター" width="204px" height="247px" loading="lazy">
+        <img class="price__char price__char__06" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_11.png" alt="キャラクター" width="115px" height="217px" loading="lazy">
+      </div> 
+    </div>
     <div class="about__top">
       <img class="about__img__01" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_02.png" alt="イラスト" width="331px" height="431px" loading="lazy">
       <img class="about__img__02" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_18.png" alt="イラスト" width="223px" height="321px" loading="lazy">
@@ -183,7 +200,11 @@
 </section>
 
 <div class="char__bg">
-  <img class="char__bg__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char.png" alt="複数のキャラクター" width="10922px" height="674px" loading="lazy">
+<picture>
+    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char.png">
+    <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char-sp.png">
+    <img class="char__bg__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char.png" alt="複数のキャラクター" width="10922px" height="674px" loading="lazy">
+</picture>
 </div>
 
 <div class="arrow__box__wrap">
@@ -253,6 +274,12 @@
       <img class="flow__img__01 price__char" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_02.png" alt="イラスト" width="331px" height="431px" loading="lazy">
     </div>
   </div>
+</div>
+
+<div class="arrow__three">
+  <img class="arrow__three__img arrow__three__img__01" src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-01.svg" alt="矢印" width="43px" height="32px" loading="lazy">
+  <img class="arrow__three__img arrow__three__img__02" src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-02.svg" alt="矢印" width="43px" height="32px" loading="lazy">
+  <img class="arrow__three__img arrow__three__img__03" src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-03.svg" alt="矢印" width="33px" height="28px" loading="lazy">
 </div>
 
 <?php get_footer(); ?>

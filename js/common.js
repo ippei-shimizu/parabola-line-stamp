@@ -1,3 +1,5 @@
+document.querySelectorAll('*').forEach(el => el.clientWidth > document.body.clientWidth ? console.log(el) : null);
+
 function animateOneText() {
   const oneTextElements = document.querySelectorAll(".one-text");
 
@@ -146,6 +148,30 @@ window.onload = function () {
         },
       },
     });
+  });
+
+  const footerInner = document.querySelector(".footer__inner");
+  gsap.to(footerInner, {
+    "--scale-footer": 1,
+    ease: "back.out(1.5)",
+    duration: 0.4,
+    scrollTrigger: {
+      trigger: footerInner,
+      start: "top center",
+      end: "bottom center",
+    },
+  });
+
+  const footerChar = document.querySelector(".footer__char");
+  gsap.to(footerChar, {
+    y: "0%",
+    ease: "back.out(1.5)",
+    duration: .5,
+    scrollTrigger: {
+      trigger: footerChar,
+      start: "top-=600px bottom",
+      end: "bottom center",
+    },
   });
 };
 

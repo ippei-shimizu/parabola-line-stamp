@@ -4,6 +4,13 @@
   min-height: 914px;
   max-height: 948px;
   overflow: hidden;
+  @include media(bp1024) {
+    min-height: 716px;
+  }
+  @include media(bp767) {
+    min-height: 380px;
+    height: 380px;
+  }
   &__inner {
     height: 100vh;
     max-width: 1980px;
@@ -12,6 +19,14 @@
     padding-top: 24px;
     position: relative;
     margin: 0 auto;
+    @include media(bp1024) {
+      min-height: 716px;
+      height: 716px;
+    }
+    @include media(bp767) {
+      min-height: 380px;
+      height: 380px;
+    }
   }
 }
 
@@ -22,6 +37,13 @@
   gap: 124px;
   margin-bottom: 18px;
   opacity: 0;
+  @include media(bp1024) {
+    gap: 10%;
+    margin-bottom: -6px;
+  }
+  @include media(bp767) {
+    gap: 26px;  
+  }
   p {
     color: $text-gray;
     background-repeat: no-repeat;
@@ -34,6 +56,16 @@
     width: 232px;
     text-align: center;
     padding-bottom: 6px;
+    @include media(bp1024) {
+      font-size: 36px;
+      line-height: 74px;
+      width: 164px;
+    }
+    @include media(bp767) {
+      font-size: 16px;
+      width: 66px;
+      line-height: 23px;
+    }
     &:nth-child(1) {
       background-image: url("../assets/images/use-bg-01.svg");
     }
@@ -47,39 +79,175 @@
   text-align: center;
   white-space: nowrap;
   padding-left: 26px;
+  @include media(bp767) {
+    padding-left: 0;
+  }
 }
 .fv__title__one {
   position: relative;
   &:nth-child(1) {
     right: -31px;
     top: 17px;
+    @include media(bp1200) {
+      .one-text {
+        width: 100px;
+      }
+    }
+    @include media(bp1024) {
+      .one-text {
+        width: 60px;
+      }
+    }
+    @include media(bp767) {
+      .one-text {
+        width: 35px;
+      }
+    }
   }
   &:nth-child(2) {
     right: -25px;
     top: 16px;
+    @include media(bp1200) {
+      .one-text {
+        width: 61px;
+      }
+    }
+    @include media(bp1024) {
+      .one-text {
+        width: 38px;
+      }
+    }
+    @include media(bp767) {
+      .one-text {
+        width: 21px;
+      }
+    }
   }
   &:nth-child(3) {
     right: -19px;
     top: 29px;
+    @include media(bp1200) {
+      .one-text {
+        width: 150px;
+      }
+    }
+    @include media(bp1024) {
+      top: 22px;
+      .one-text {
+        width: 78px;
+      }
+    }
+    @include media(bp767) {
+      .one-text {
+        width: 49px;
+      }
+    }
   }
   &:nth-child(4) {
     right: -14px;
     top: -2px;
+    @include media(bp1200) {
+      .one-text {
+        width: 110px;
+      }
+    }
+    @include media(bp1024) {
+      top: 8px;
+      .one-text {
+        width: 64px;
+      }
+    }
+    @include media(bp767) {
+      top: 16px;
+      .one-text {
+        width: 36px;
+      }
+    }
   }
   &:nth-child(5) {
     right: -5px;
+    @include media(bp1200) {
+      .one-text {
+        width: 134px;
+      }
+    }
+    @include media(bp1024) {
+      .one-text {
+        width: 70px;
+      }
+    }
+    @include media(bp767) {
+      right: -7px;
+      top: 17px;
+      .one-text {
+        width: 41px;
+      }
+    }
   }
   &:nth-child(6) {
     left: -17px;
     top: 5px;
+    @include media(bp1200) {
+      .one-text {
+        width: 142px;
+      }
+    }
+    @include media(bp1024) {
+      .one-text {
+        width: 77px;
+      }
+    }
+    @include media(bp767) {
+      left: 1px;
+      top: 18px;
+      .one-text {
+        width: 43px;
+      }
+    }
   }
   &:nth-child(7) {
     left: -27px;
     top: 39px;
+    @include media(bp1200) {
+      .one-text {
+        width: 147px;
+      }
+    }
+    @include media(bp1024) {
+      top: 12px;
+      .one-text {
+        width: 82px;
+      }
+    }
+    @include media(bp767) {
+      top: 23px;
+      left: -8px;
+      .one-text {
+        width: 44px;
+      }
+    }
   }
   &:nth-child(8) {
     left: -53px;
     top: -8px;
+    @include media(bp1200) {
+      .one-text {
+        width: 162px;
+      }
+    }
+    @include media(bp1024) {
+      left: -40px;
+      .one-text {
+        width: 84px;
+      }
+    }
+    @include media(bp767) {
+      left: -23px;
+      top: 12px;
+      .one-text {
+        width: 53px;
+      }
+    }
   }
   .one-text {
     height: auto;
@@ -97,6 +265,13 @@
   left: 0;
   padding-bottom: 70px;
   padding-top: 274px;
+  @include media(bp1024) {
+    padding-top: 164px;
+    min-height: 716px;
+  }
+  @include media(bp767) {
+    padding-top: 104px;
+  }
 }
 
 .fv__main__inner {
@@ -104,6 +279,12 @@
   height: 100%;
   margin: 0 auto;
   position: relative;
+  @include media(bp1024) {
+    height: 453px;
+  }
+  @include media(bp767) {
+    height: 190px;
+  }
 }
 
 .fv__main__bg {
@@ -126,6 +307,9 @@
     left: 0;
     z-index: 1;
     opacity: var(--pseudo-opacity);
+    @include media(bp767) {
+      border-radius: 8px;
+    }
   }
 }
 
@@ -141,12 +325,32 @@
   .char-img {
     display: block;
     position: relative;
-    animation: charBalloonRotateChar .5s steps(2,jump-none) infinite alternate;
+    animation: charBalloonRotateChar 0.5s steps(2, jump-none) infinite alternate;
     &:nth-child(1) {
       right: -12px;
+      @include media(bp1024) {
+        width: 194px;
+      }
+      @include media(bp767) {
+        width: 79px;
+      }
+    }
+    &:nth-child(2) {
+      @include media(bp1024) {
+        width: 230px;
+      }
+      @include media(bp767) {
+        width: 86px;
+      }
     }
     &:nth-child(3) {
       left: -12px;
+      @include media(bp1024) {
+        width: 164px;
+      }
+      @include media(bp767) {
+        width: 62px;
+      }
     }
   }
 }
@@ -176,12 +380,21 @@
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
+  @include media(bp1024) {
+    bottom: 74px;
+  }
   p {
     color: #fff;
     font-size: 124px;
     letter-spacing: -0.14em;
     line-height: 0.4;
     font-family: $family-APJapanese;
+    @include media(bp1024) {
+      font-size: 72px;
+    }
+    @include media(bp767) {
+      font-size: 45px;
+    }
   }
 }
 
@@ -193,155 +406,360 @@
 .icon-01 {
   top: -234px;
   left: -7px;
+  @include media(bp1024) {
+    top: -107px;
+    width: 20px;
+  }
+  @include media(bp767) {
+    width: 10px;
+    top: -52px;
+    left: -2px;
+  }
 }
 
 .icon-02 {
   top: -272px;
   left: 32%;
   transform: translateX(-50%);
+  @include media(bp1024) {
+    width: 40px;
+    top: -147px;
+  }
+  @include media(bp767) {
+    width: 20px;
+    top: -70px;
+    left: 24%;
+  }
 }
 
 .icon-03 {
   top: -156px;
   left: 46%;
   transform: translateX(-50%);
+  @include media(bp1024) {
+    width: 20px;
+    top: -70px;
+  }
+  @include media(bp767) {
+    width: 8px;
+    top: -23px;
+  }
 }
 
 .icon-04 {
   left: 274px;
   top: 67%;
+  @include media(bp1024) {
+    left: 194px;
+    width: 24px;
+  }
+  @include media(bp767) {
+    width: 8.7px;
+    left: -4%;
+    top: 51%;
+  }
 }
 
 .icon-05 {
   right: 217px;
   top: 67%;
+  @include media(bp1024) {
+    right: 162px;
+    width: 30px;
+  }
+  @include media(bp767) {
+    width: 13px;
+    right: 64px;
+    top: 88px;
+  }
 }
 
 .icon-06 {
   left: -10%;
   top: 45%;
+  @include media(bp1024) {
+    left: -1%;
+    width: 20px;
+  }
+  @include media(bp767) {
+    width: 9px;
+    left: 34%;
+    top: 91px;
+  }
 }
 
 .icon-07 {
   left: -4%;
   top: 29%;
+  @include media(bp1024) {
+    left: 19px;
+    width: 18px;
+  }
+  @include media(bp767) {
+    width: 7.4px;
+    left: 5px;
+    top: 47px;
+  }
 }
 
 .icon-08 {
   left: 26%;
   top: -3%;
+  @include media(bp1024) {
+    top: 4%;
+    width: 20px;
+  }
+  @include media(bp767) {
+    width: 7.5px;
+    top: -4%;
+    left: 28%;
+  }
 }
 
 .icon-09 {
   left: 39%;
   top: -6%;
+  @include media(bp1024) {
+    width: 18px;
+    top: -7%;
+    left: 35%;
+  }
+  @include media(bp767) {
+    width: 8.4px;
+    left: 39%;
+  }
 }
 
 .icon-10 {
   right: -2%;
   top: 34%;
+  @include media(bp1024) {
+    width: 18px;
+    top: 82%;
+  }
+  @include media(bp767) {
+    width: 6.5px;
+    right: -18%;
+    top: 72%;
+  }
 }
 
 .icon-11 {
   right: 1%;
   top: -4%;
+  @include media(bp1024) {
+    width: 20px;
+    right: 9%;
+  }
+  @include media(bp767) {
+    width: 8.4px;
+  }
 }
 
 .icon-12 {
   right: -4%;
   top: -12%;
+  @include media(bp1024) {
+    width: 20px;
+    top: -17%;
+    right: 5%;
+  }
+  @include media(bp767) {
+    width: 7.4px;
+  }
 }
 
 .icon-13 {
   left: -25%;
   top: 35%;
+  @include media(bp1024) {
+    width: 61px;
+    left: -7%;
+    top: 20%;
+  }
+  @include media(bp767) {
+    width: 29px;
+    left: -21%;
+    top: 31%;
+  }
 }
 
 .icon-14 {
   left: 11%;
   top: -8%;
+  @include media(bp1024) {
+    width: 36px;
+  }
+  @include media(bp767) {
+    width: 17px;
+    left: 15%;
+    top: -18%;
+  }
 }
 
 .icon-15 {
   left: 48%;
   top: -16%;
+  @include media(bp1024) {
+    width: 60px;
+  }
+  @include media(bp767) {
+    width: 30px;
+    top: -23%;
+    left: 49%;
+  }
 }
 
 .icon-16 {
   right: 20%;
   top: -7%;
+  @include media(bp1024) {
+    width: 32px;
+    right: -4%;
+  }
+  @include media(bp767) {
+    width: 16px;
+    right: -17%;
+    top: -11%;
+  }
 }
 
 .icon-17 {
   right: 9%;
   top: 21%;
+  @include media(bp1024) {
+    width: 60px;
+  }
+  @include media(bp767) {
+    width: 26px;
+    right: 10%;
+    top: 15%;
+  }
 }
 
 .icon-18 {
   right: -24%;
   top: 43%;
+  @include media(bp1024) {
+    width: 100px;
+    right: -10%;
+    top: 20%;
+  }
+  @include media(bp767) {
+    width: 53px;
+    right: -27%;
+    top: 14%;
+  }
 }
 
 .icon-19 {
   left: -16%;
   bottom: 2%;
+  @include media(bp1024) {
+    width: 60px;
+    left: -5%;
+  }
+  @include media(bp767) {
+    width: 30px;
+    bottom: -8%;
+    left: -9%;
+  }
 }
 
 .icon-20 {
   left: -19%;
   top: -8%;
+  @include media(bp1024) {
+    width: 62px;
+    left: -4%;
+    top: -7%;
+  }
+  @include media(bp767) {
+    width: 38px;
+    top: -17%;
+    left: -11%;
+  }
 }
 
 .icon-21 {
   right: -19%;
   top: -4%;
+  @include media(bp1024) {
+    width: 70px;
+    right: 19%;
+    top: -16%;
+  }
+  @include media(bp767) {
+    width: 24.8px;
+    top: -22%;
+  }
 }
 
 .icon-22 {
   right: -19%;
   bottom: 27%;
+  @include media(bp1024) {
+    width: 57px;
+    right: -7%;
+    top: 24%;
+  }
+  @include media(bp767) {
+    width: 24px;
+    right: -21%;
+    top: 25%;
+  }
+}
+
+.icon-23 {
+  display: none;
+  @include media(bp767) {
+    display: block;
+    bottom: -7%;
+    right: -19%;
+  }
 }
 
 .icon-animation {
   opacity: 0;
   position: absolute;
   display: block;
-  animation: charBalloonRotate .5s steps(2,jump-none) infinite alternate;
+  animation: charBalloonRotate 0.5s steps(2, jump-none) infinite alternate;
 }
 
 .icon-animation-reverse {
   opacity: 0;
   position: absolute;
   display: block;
-  animation: charBalloonRotateReverse .5s steps(2,jump-none) infinite alternate;
+  animation: charBalloonRotateReverse 0.5s steps(2, jump-none) infinite
+    alternate;
 }
 
 @keyframes charBalloonRotateChar {
   0% {
-      rotate: -2deg;
+    rotate: -2deg;
   }
 
   to {
-      rotate: 2deg;
+    rotate: 2deg;
   }
 }
 
 @keyframes charBalloonRotate {
   0% {
-      rotate: 0;
+    rotate: 0;
   }
 
   to {
-      rotate: -5deg;
+    rotate: -5deg;
   }
 }
 
 @keyframes charBalloonRotateReverse {
   0% {
-      rotate: -5deg;
+    rotate: -5deg;
   }
 
   to {
-      rotate: 0;
+    rotate: 0;
   }
 }
