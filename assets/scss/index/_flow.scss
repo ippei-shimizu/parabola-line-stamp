@@ -1,0 +1,134 @@
+@use "../setting/index" as *;
+
+.flow {
+  padding-top: 92px;
+  &__inner {
+    padding-bottom: 12px;
+    position: relative;
+  }
+}
+
+.flow__title {
+  width: 68%;
+  max-width: 1980px;
+  margin: 0 auto;
+  padding-bottom: 46px;
+}
+
+.flow__img__one {
+  opacity: 0;
+}
+
+.flow__contents {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flow__item {
+  display: grid;
+  grid-template-columns: 211px auto;
+  grid-template-rows: auto auto;
+  grid-gap: 16px;
+  margin-bottom: 20px;
+}
+
+.flow__step {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 32px;
+}
+
+.flow__menu {
+  grid-column: 2;
+  grid-row: 1;
+  color: #fff;
+  font-size: 80px;
+  letter-spacing: -9px;
+  padding-top: 16px;
+  margin-left: 32px;
+}
+
+.flow__text {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  background-color: #fff;
+  color: $color-text;
+  font-size: 27px;
+  font-family: $family-a-otf-jun-pro;
+  line-height: 1.6em;
+  padding: 32px 92px;
+  border-radius: 999px;
+}
+
+.flow__item__02 {
+  margin-top: 40px;
+}
+
+.flow__item__02__title {
+  color: #fff;
+  font-size: 80px;
+  letter-spacing: -9px;
+  text-shadow: 4px 4px 0px $text-gray, -4px 4px 0px $text-gray,
+    4px -4px 0px $text-gray, -4px -4px 0px $text-gray, 4px 0px 0px $text-gray,
+    0px 4px 0px $text-gray, -4px 0px 0px $text-gray, 0px -4px 0px $text-gray;
+  line-height: 0.7;
+  margin-left: 32px;
+}
+
+.flow__item__02__text__wrap {
+  background-color: $bg-light-fv;
+  padding: 40px 92px;
+  border-radius: 84px;
+}
+
+.flow__item__02__text {
+  font-size: 27px;
+  color: #fff;
+  line-height: 1.6em;
+  font-family: $family-a-otf-jun-pro;
+}
+
+.flow__item__02__text__box {
+  display: flex;
+  gap: 10px;
+}
+
+.flow__item__02__bottom {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+}
+
+.flow__item__sub__text {
+  color: $color-text;
+  font-size: 20px;
+  font-family: $family-a-otf-jun-pro;
+  padding: 24px 0 0 92px;
+  line-height: 1.5em;
+}
+
+.flow__img__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -150px;
+  img {
+    display: block;
+    animation: charBalloonRotateChar 0.5s steps(2, jump-none) infinite alternate;
+  }
+  .flow__img__04 {
+    transform: rotate(14deg);
+    position: relative;
+    top: 140px;
+  }
+}
+
+.flow__img__01 {
+  position: absolute;
+  left: -285px;
+  top: 19%;
+  z-index: -1;
+  width: 592px;
+  transform: translateX(-100%);
+}

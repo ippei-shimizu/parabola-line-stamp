@@ -100,8 +100,10 @@
   </div>
 </section>
 
-<div class="arrow__box">
-  <img class="arrow__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/sen-1.svg" alt="矢印" width="106px" height="313px" loading="lazy">
+<div class="arrow__box__wrap">
+  <div class="arrow__box">
+    <img class="arrow__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/sen-1.svg" alt="矢印" width="106px" height="313px" loading="lazy">
+  </div>
 </div>
 
 <section class="price">
@@ -114,21 +116,21 @@
       </div>
       <div class="price__box">
         <h2 class="price__title">
-        <span class="price__title__one price__title__one__p">
-          <img class="price__img__one price__p" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-p.png" alt="P" width="81px" height="102px" loading="lazy">
-        </span>
-        <span class="price__title__one">
-          <img class="price__img__one price__r" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-r.png" alt="R" width="84px" height="102px" loading="lazy">
-        </span>
-        <span class="price__title__one">
-          <img class="price__img__one price__i" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-i.png" alt="I" width="38px" height="102px" loading="lazy">
-        </span>
-        <span class="price__title__one">
-          <img class="price__img__one price__c" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-c.png" alt="C" width="84px" height="102px" loading="lazy">
-        </span>
-        <span class="price__title__one">
-          <img class="price__img__one price__e" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-e.png" alt="E" width="76px" height="102px" loading="lazy">
-        </span>
+          <span class="price__title__one price__title__one__p">
+            <img class="price__img__one price__p" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-p.png" alt="P" width="81px" height="102px" loading="lazy">
+          </span>
+          <span class="price__title__one">
+            <img class="price__img__one price__r" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-r.png" alt="R" width="84px" height="102px" loading="lazy">
+          </span>
+          <span class="price__title__one">
+            <img class="price__img__one price__i" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-i.png" alt="I" width="38px" height="102px" loading="lazy">
+          </span>
+          <span class="price__title__one">
+            <img class="price__img__one price__c" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-c.png" alt="C" width="84px" height="102px" loading="lazy">
+          </span>
+          <span class="price__title__one">
+            <img class="price__img__one price__e" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-e.png" alt="E" width="76px" height="102px" loading="lazy">
+          </span>
         </h2>
         <div class="price__item scrollUpText">
           <div class="price__item__inner">
@@ -182,6 +184,75 @@
 
 <div class="char__bg">
   <img class="char__bg__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char.png" alt="複数のキャラクター" width="10922px" height="674px" loading="lazy">
+</div>
+
+<div class="arrow__box__wrap">
+  <div class="arrow__box__02">
+    <img class="arrow__img__02" src="<?php echo get_template_directory_uri(); ?>/assets/images/sen-2.svg" alt="矢印" width="216px" height="318px" loading="lazy">
+  </div>
+</div>
+
+<div class="flow">
+  <div class="flow__inner">
+    <h2 class="flow__title">
+      <span class="flow__title__one">
+        <img class="flow__img__one" src="<?php echo get_template_directory_uri(); ?>/assets/images/flow-f.png" alt="F" width="75px" height="102px" loading="lazy">
+      </span>
+      <span class="flow__title__one">
+        <img class="flow__img__one" src="<?php echo get_template_directory_uri(); ?>/assets/images/flow-l.png" alt="L" width="72px" height="102px" loading="lazy">
+      </span>
+      <span class="flow__title__one">
+        <img class="flow__img__one" src="<?php echo get_template_directory_uri(); ?>/assets/images/flow-o.png" alt="O" width="104px" height="107px" loading="lazy">
+      </span>
+      <span class="flow__title__one">
+        <img class="flow__img__one" src="<?php echo get_template_directory_uri(); ?>/assets/images/flow-w.png" alt="W" width="126px" height="102px" loading="lazy">
+      </span>
+    </h2>
+    <div class="flow__contents">
+      <div class="flow__item">
+        <img class="flow__step" src="<?php echo get_template_directory_uri(); ?>/assets/images/step-01.png" alt="STEP1" width="210px" height="114px" loading="lazy">
+        <h3 class="flow__menu">打ち合わせ</h3>
+        <p class="flow__text">キャラクターの打ち合わせをしてイメージを共有します。<br class="flow__br">
+制作目的やイメージ画像などがあると話がスムーズに進みます。</p>
+      </div>
+      <div class="flow__item">
+        <img class="flow__step" src="<?php echo get_template_directory_uri(); ?>/assets/images/step-02.png" alt="STEP2" width="210px" height="114px" loading="lazy">
+        <h3 class="flow__menu">デザイン制作</h3>
+        <p class="flow__text">打ち合わせのイメージでキャラクターを1キャラ作成します。OKが出た時点でスタンプ個数分作成します。キャラクター校正は2回まで無償です。</p>
+      </div>
+      <div class="flow__item">
+        <img class="flow__step" src="<?php echo get_template_directory_uri(); ?>/assets/images/step-03.png" alt="STEP3" width="210px" height="114px" loading="lazy">
+        <h3 class="flow__menu">確認・修正</h3>
+        <p class="flow__text">文字の変更やポーズの変更など修正は2回まで無償で行えます。<br class="flow__br">
+3回目以降は有償となりますが、ご納得いただけるまで校正いたします。</p>
+      </div>
+      <div class="flow__item">
+        <img class="flow__step" src="<?php echo get_template_directory_uri(); ?>/assets/images/step-04.png" alt="STEP4" width="210px" height="114px" loading="lazy">
+        <h3 class="flow__menu">申請・納品</h3>
+        <p class="flow__text">OKになったらLINEのアカウントを新規で作成しスタンプの申請を行います。LINEからの修正依頼に対応して納品となります。</p>
+      </div>
+      <div class="flow__item__02">
+        <h4 class="flow__item__02__title">必要となるもの</h4>
+        <div class="flow__item__02__text__wrap">
+          <p class="flow__item__02__text">■ LINEアカウント  ■イメージイラスト</p>
+          <div class="flow__item__02__text__box">
+            <p class="flow__item__02__text">■ クリエイター名</p>
+            <p class="flow__item__02__text">■ スタンプタイトル（40文字以内）</p>
+          </div>
+          <p class="flow__item__02__text">■ スタンプ説明文（160文字以内）</p>
+          <p class="flow__item__02__text">※全角文字は2文字としてカウントされます</p>
+        </div>
+      </div>
+      <div class="flow__item__02__bottom">
+        <p class="flow__item__sub__text">※詳細に関しましてはお問い合わせいただいた際にお伝えいたします。</p>
+        <div class="flow__img__box">
+          <img class="flow__img__03" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_05.png" alt="イラスト" width="150px" height="203px" loading="lazy">
+          <img class="flow__img__04" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_04.png" alt="イラスト" width="188px" height="234px" loading="lazy">
+        </div>
+      </div>
+      <img class="flow__img__01 price__char" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_02.png" alt="イラスト" width="331px" height="431px" loading="lazy">
+    </div>
+  </div>
 </div>
 
 <?php get_footer(); ?>

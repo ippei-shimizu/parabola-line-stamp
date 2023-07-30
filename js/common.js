@@ -48,7 +48,7 @@ window.onload = function () {
         scale: 1,
         "--pseudo-opacity": 1,
         ease: "Power1.easeInOut",
-        duration: 0.55,
+        duration: 0.3,
       },
       3
     )
@@ -59,7 +59,7 @@ window.onload = function () {
       {
         opacity: 1,
         ease: "Power1.easeInOut",
-        duration: 0.55,
+        duration: 0.3,
       }
     );
 
@@ -90,12 +90,26 @@ window.onload = function () {
     },
   });
 
+  const arrowBox02 = document.querySelector(".arrow__box__02");
+  gsap.to(arrowBox02, {
+    y: 0,
+    x: 0,
+    opacity: 1,
+    ease: "bounce.out",
+    duration: 1.4,
+    scrollTrigger: {
+      trigger: arrowBox02,
+      start: "top center",
+      end: "bottom center",
+    },
+  });
+
   const priceChars = document.querySelectorAll(".price__char");
   priceChars.forEach((priceChar, index) => {
     gsap.to(priceChar, {
       x: "0%",
       ease: "back.out(1.5)",
-      duration: .3,
+      duration: 0.3,
       scrollTrigger: {
         trigger: priceChar,
         start: "top center",
@@ -105,14 +119,29 @@ window.onload = function () {
   });
 
   const priceImgOnes = document.querySelectorAll(".price__img__one");
-  priceImgOnes .forEach((priceImgOne, index) => {
+  priceImgOnes.forEach((priceImgOne, index) => {
     gsap.to(priceImgOne, {
       scrollTrigger: {
         trigger: priceImgOne,
         start: "top center",
         end: "bottom center",
-        onEnter: function(self) {
+        onEnter: function (self) {
           priceOneText();
+          self.disable();
+        },
+      },
+    });
+  });
+
+  const flowImgOnes = document.querySelectorAll(".flow__img__one");
+  flowImgOnes.forEach((flowImgOne, index) => {
+    gsap.to(flowImgOne, {
+      scrollTrigger: {
+        trigger: flowImgOne,
+        start: "top center",
+        end: "bottom center",
+        onEnter: function (self) {
+          flowOneText();
           self.disable();
         },
       },
@@ -120,9 +149,35 @@ window.onload = function () {
   });
 };
 
-
 function priceOneText() {
   const priceOneTextElements = document.querySelectorAll(".price__img__one");
+
+  function createStaggerAnimation(element) {
+    const tl = gsap.timeline();
+    tl.to(element, {
+      opacity: 1,
+      y: "-4rem",
+      duration: 0.25,
+      ease: "Power1.easeInOut",
+    }).to(element, {
+      y: "0rem",
+      duration: 0.25,
+      ease: "Power1.easeInOut",
+    });
+
+    return tl;
+  }
+
+  const mainTl = gsap.timeline();
+  priceOneTextElements.forEach((element, index) => {
+    mainTl.add(createStaggerAnimation(element), index * 0.08);
+  });
+
+  return mainTl;
+}
+
+function flowOneText() {
+  const priceOneTextElements = document.querySelectorAll(".flow__img__one");
 
   function createStaggerAnimation(element) {
     const tl = gsap.timeline();
