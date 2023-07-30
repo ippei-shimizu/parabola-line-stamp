@@ -33,6 +33,7 @@ img {
 .fv {
   min-height: 914px;
   max-height: 948px;
+  overflow: hidden;
 }
 .fv__inner {
   height: 100vh;
@@ -443,5 +444,17 @@ img {
   transform: rotate(14deg);
   position: relative;
   top: 28px;
+}
+
+.arrow__box {
+  width: fit-content;
+  margin: 0 auto 56px 11%;
+  position: relative;
+  transform: translate(-2rem, -16rem);
+  opacity: 0;
+}
+.arrow__box .arrow__img {
+  display: block;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

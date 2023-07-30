@@ -73,4 +73,20 @@ window.onload = function () {
         }
       });
     });
+
+    const arrowBox = document.querySelector(".arrow__box");
+    gsap.to(arrowBox, {
+      y: 0,
+      x: 0,
+      opacity: 1,
+      ease: "bounce.out",
+      duration: 1.4,
+      scrollTrigger: {
+        trigger: arrowBox,
+        start: 'top center',
+        end: 'bottom center',
+      }
+    });
 };
+
+

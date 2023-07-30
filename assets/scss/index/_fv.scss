@@ -3,6 +3,7 @@
 .fv {
   min-height: 914px;
   max-height: 948px;
+  overflow: hidden;
   &__inner {
     height: 100vh;
     max-width: 1980px;

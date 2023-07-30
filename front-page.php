@@ -100,4 +100,25 @@
   </div>
 </section>
 
+<div class="arrow__box">
+  <img class="arrow__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/sen-1.svg" alt="矢印" width="106px" height="313px" loading="lazy">
+</div>
+
+<section class="price">
+  <div class="price__inner">
+    <h2 class="price__title">
+      <span class="price__title__one">P</span>
+      <span class="price__title__one">R</span>
+      <span class="price__title__one">I</span>
+      <span class="price__title__one">C</span>
+      <span class="price__title__one">E</span>
+    </h2>
+    <div class="price__container">
+      <div class="price__char__box">
+
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php get_footer(); ?>
