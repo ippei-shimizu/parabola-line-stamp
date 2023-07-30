@@ -32,15 +32,20 @@ body {
   background-color: $bg-light;
 }
 
+body.dark {
+  background-color: $bg-dark;
+}
+
 img {
   height: auto;
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 5%;
   z-index: 999;
+  height: 0;
   @include media(bp767) {
     right: 18px;
   }
@@ -58,7 +63,7 @@ label {
   width: 83px;
   height: 43px;
   background: #3eac4a;
-  margin: 0 auto;
+  margin: 0 5% 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,6 +71,7 @@ label {
   -moz-border-radius: 100px;
   border-radius: 100px;
   position: relative;
+  transition: background-color .6s .6s;
   @include media(bp767) {
     width: 30px;
     height: 15px;
@@ -93,6 +99,7 @@ label:after {
 
 input:checked + label {
   background: #ab9aba;
+  transition: background-color .6s .6s;
 }
 
 input:checked + label:after {
@@ -103,3 +110,4 @@ input:checked + label:after {
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
 }
+

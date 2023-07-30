@@ -1,5 +1,3 @@
-document.querySelectorAll('*').forEach(el => el.clientWidth > document.body.clientWidth ? console.log(el) : null);
-
 function animateOneText() {
   const oneTextElements = document.querySelectorAll(".one-text");
 
@@ -166,14 +164,94 @@ window.onload = function () {
   gsap.to(footerChar, {
     y: "0%",
     ease: "back.out(1.5)",
-    duration: .5,
+    duration: 0.5,
     scrollTrigger: {
       trigger: footerChar,
       start: "top-=600px bottom",
       end: "bottom center",
     },
   });
+
+  const checkbox = document.querySelector("input[name=mode]");
+  checkbox.addEventListener("change", function () {
+    trans();
+    if (this.checked) {
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
+      switchImages("dark");
+    } else {
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+      switchImages("light");
+    }
+  });
+
+  let trans = () => {
+    document.documentElement.classList.add("transition");
+    window.setTimeout(() => {
+      document.documentElement.classList.remove("transition");
+    }, 1000);
+  };
 };
+
+function switchImages(mode) {
+  const targetClasses = [
+    "char-img-01",
+    "char-img-02",
+    "char-img-03",
+    "about__img__01",
+    "about__img__02",
+    "about__img__03",
+    "about__img__04",
+    "about__img__05",
+    "about__img__06",
+    "price__char__01",
+    "price__char__02",
+    "price__char__03",
+    "price__char__04",
+    "price__char__05",
+    "price__char__06",
+    "flow__img__01__min",
+    "flow__img__01__max",
+    "flow__img__01",
+    "flow__img__03",
+    "flow__img__04",
+    "footer__char",
+    "logo__img",
+    "contact__title__img",
+    "flow__img__one",
+    "price__p",
+    "price__r",
+    "price__i",
+    "price__c",
+    "price__e",
+  ];
+  targetClasses.forEach((targetClass) => {
+    const elements = document.querySelectorAll(`.${targetClass}`);
+    elements.forEach((el) => {
+      let src = el.getAttribute("srcset") || el.getAttribute("src");
+      if (mode === "dark") {
+        if (!src.endsWith("-dark.png")) {
+          const newSrc = src.replace(".png", "-dark.png");
+          if (el.getAttribute("srcset")) {
+            el.setAttribute("srcset", newSrc);
+          } else {
+            el.setAttribute("src", newSrc);
+          }
+        }
+      } else {
+        if (src.endsWith("-dark.png")) {
+          const newSrc = src.replace("-dark.png", ".png");
+          if (el.getAttribute("srcset")) {
+            el.setAttribute("srcset", newSrc);
+          } else {
+            el.setAttribute("src", newSrc);
+          }
+        }
+      }
+    });
+  });
+}
 
 function priceOneText() {
   const priceOneTextElements = document.querySelectorAll(".price__img__one");

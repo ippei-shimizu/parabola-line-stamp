@@ -69,7 +69,7 @@
     }
     @include media(bp767) {
       img {
-        width: 14px;
+        width: 13px;
       }
     }
   }
@@ -144,6 +144,7 @@
   background-color: #fff;
   padding: 8px 20px;
   display: flex;
+  transition: border-color 0.6s 0.6s;
   @include media(bp767) {
     border-width: 3px;
     padding: 3px 7px;
@@ -160,6 +161,7 @@
   width: 230px;
   text-align: center;
   line-height: 1;
+  transition: background-color 0.6s 0.6s;
   @include media(bp1100) {
     font-size: 28px;
   }
@@ -179,6 +181,7 @@
   font-family: $family-a-otf-jun-pro;
   font-size: 48px;
   margin-left: 10%;
+  transition: color 0.6s 0.6s;
   @include media(bp1100) {
     font-size: 28px;
   }
@@ -212,6 +215,7 @@
   font-family: $family-a-otf-jun-pro;
   color: #000;
   line-height: 1.6em;
+  transition: color 0.6s 0.6s;
   @include media(bp767) {
     font-size: 10px;
     padding-top: 0;

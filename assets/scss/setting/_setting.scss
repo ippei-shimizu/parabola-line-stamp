@@ -1,17 +1,20 @@
 // color
 $bg-light: #dcdddd;
 $bg-light-fv: #c9caca;
+$bg-dark: #9d7fad;
 $text-gray: #c9caca;
 $color-text: #595757;
 $color-text-02: #727171;
 $color-border: #9fa0a0;
+$color-dark-text: #91719f;
+$color-dark-border: #7b6394;
 
 // font-family
 $family-boloo: "BalooBhainaOdia";
 $family-gorarice-kaiju: "GomariceKaijuMonster";
 $family-APJapanese: "APJapanesefont";
 $family-shuei: "dnp-shuei-mgothic-std";
-$family-a-otf-jun-pro: "a-otf-jun-pro"; 
+$family-a-otf-jun-pro: "a-otf-jun-pro";
 
 //メディアクエリ
 @mixin media($breakpoint: md) {
@@ -21,9 +24,9 @@ $family-a-otf-jun-pro: "a-otf-jun-pro";
 }
 //ブレイクポイント
 $breakpoint-up: (
-  'min1980': 'screen and (min-width:1980px)',
-  'bp1200': 'screen and (max-width:1200px)',
-  'bp1100': 'screen and (max-width:1100px)',
-  'bp1024': 'screen and (max-width:1024px)',
-  'bp767': 'screen and (max-width:767px)',
+  "min1980": "screen and (min-width:1980px)",
+  "bp1200": "screen and (max-width:1200px)",
+  "bp1100": "screen and (max-width:1100px)",
+  "bp1024": "screen and (max-width:1024px)",
+  "bp767": "screen and (max-width:767px)",
 ) !default;

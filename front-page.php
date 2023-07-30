@@ -140,7 +140,7 @@
             <img class="price__img__one price__r" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-r.png" alt="R" width="84px" height="102px" loading="lazy">
           </span>
           <span class="price__title__one">
-            <img class="price__img__one price__i" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-i.png" alt="I" width="38px" height="102px" loading="lazy">
+            <img class="price__img__one price__i" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-i.png" alt="I" width="36px" height="102px" loading="lazy">
           </span>
           <span class="price__title__one">
             <img class="price__img__one price__c" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-c.png" alt="C" width="84px" height="102px" loading="lazy">
@@ -271,7 +271,11 @@
           <img class="flow__img__04" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_04.png" alt="イラスト" width="188px" height="234px" loading="lazy">
         </div>
       </div>
-      <img class="flow__img__01 price__char" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_02.png" alt="イラスト" width="331px" height="431px" loading="lazy">
+      <picture>
+        <source class="flow__img__01__min" media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/justice_02.png">
+        <source class="flow__img__01__max" media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/justice_02-sp.png">
+        <img class="flow__img__01 price__char" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_02.png" alt="イラスト" width="331px" height="431px" loading="lazy">
+      </picture>
     </div>
   </div>
 </div>

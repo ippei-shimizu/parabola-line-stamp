@@ -15,7 +15,7 @@
       <img class="line__qr__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/line-qr.png" alt="LINE登録QRコード" width="280px" height="280px" loading="lazy">
       <div class="info__box">
         <img class="logo__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="スタンプ村 product by Parabola" width="245px" height="143px" loading="lazy">
-        <div>
+        <div class="info__text__box">
           <p>〒409-3841 山梨県中央市布施2061-1</p>
           <p><a href="mailto:design@parabolainc.jp">design@parabolainc.jp</a></p>
           <p><a href="tel:055-288-8742">055-288-8742</a></p>

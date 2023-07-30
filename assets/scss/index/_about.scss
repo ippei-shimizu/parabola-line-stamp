@@ -104,6 +104,7 @@
 .about__text__box {
   color: $color-text;
   text-align: center;
+  transition: color .6s .6s;
   .about__title {
     font-size: 47px;
     font-weight: bold;
@@ -194,6 +195,8 @@
     display: grid;
     grid-template-columns: 83px 1fr 83px;
     margin-bottom: 32px;
+    overflow: hidden;
+    padding-top: 64px;
     .about__title {
       font-size: 17px;
       text-align: center;
@@ -201,6 +204,12 @@
     }
     .price__char__box {
       top: -60px;
+    }
+    .price__char__box__left {
+      left: -9px;
+    }
+    .price__char__box__right {
+      right: -9px;
     }
     .price__char__01,
     .price__char__04 {

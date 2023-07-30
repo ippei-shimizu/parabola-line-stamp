@@ -7,12 +7,18 @@
   @include media(bp1024) {
     padding-bottom: 256px;
   }
+  @include media(bp1024) {
+    padding-bottom: 126px;
+  }
   &__inner {
     width: 100%;
     height: 100%;
     position: relative;
     padding: 162px 0;
     --scale-footer: 0;
+    @include media(bp767) {
+      padding: 56px 16px 96px;
+    }
     &::before {
       content: "";
       width: 100%;
@@ -25,6 +31,10 @@
       z-index: -1;
       border-radius: 234px;
       scale: var(--scale-footer);
+      transition: background-color 0.6s 0.6s;
+      @include media(bp767) {
+        border-radius: 60px;
+      }
     }
   }
 }
@@ -33,16 +43,26 @@
   max-width: 1980px;
   width: 76%;
   margin: 0 auto;
+  @include media(bp767) {
+    width: 100%;
+  }
 }
 
 .contact__title {
   width: 90%;
   margin: 0 auto 46px;
+  @include media(bp1024) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .contact__title__img {
   @include media(bp1024) {
     width: 400px;
+  }
+  @include media(bp1024) {
+    width: 215px;
   }
 }
 
@@ -57,6 +77,12 @@
   @include media(bp1024) {
     font-size: 24px;
   }
+  @include media(bp767) {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 0;
+    margin-bottom: 11px;
+  }
 }
 
 .contact__text__02 {
@@ -70,11 +96,21 @@
   @include media(bp1024) {
     font-size: 16px;
   }
+  @include media(bp767) {
+    width: 100%;
+    font-size: 9px;
+    letter-spacing: 0;
+    margin-bottom: 28px;
+  }
 }
 
 .line__qr__img {
   display: block;
   margin: 0 auto 136px;
+  @include media(bp767) {
+    width: 100px;
+    margin-bottom: 67px;
+  }
 }
 
 .info__box {
@@ -82,19 +118,38 @@
   grid-template-columns: auto 1fr;
   justify-content: center;
   gap: 10%;
+  @include media(bp767) {
+    display: block;
+  }
   p {
     color: #000;
     font-family: $family-a-otf-jun-pro;
     font-size: 36px;
     line-height: 1.4em;
+    transition: color 0.6s 0.6s;
     @include media(bp1024) {
       font-size: 24px;
     }
+    @include media(bp767) {
+      font-size: 15px;
+    }
+  }
+}
+
+.info__text__box {
+  @include media(bp767) {
+    width: fit-content;
+    margin: 0 auto;
   }
 }
 
 .logo__img {
   display: block;
+  @include media(bp767) {
+    width: 141px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
 }
 
 .footer__char {
@@ -105,5 +160,9 @@
   transform: translate(-50%, 100%);
   @include media(bp1024) {
     width: 666px;
+  }
+  @include media(bp767) {
+    width: 96%;
+    bottom: -32px;
   }
 }

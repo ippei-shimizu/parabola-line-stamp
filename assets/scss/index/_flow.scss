@@ -174,6 +174,7 @@
     0px 4px 0px $text-gray, -4px 0px 0px $text-gray, 0px -4px 0px $text-gray;
   line-height: 0.7;
   margin-left: 32px;
+  transition: text-shadow .6s .6s;
   @include media(bp1024) {
     font-size: 60px;
   }
@@ -191,6 +192,7 @@
   background-color: $bg-light-fv;
   padding: 40px 92px;
   border-radius: 84px;
+  transition: background-color .6s .6s;
   @include media(bp767) {
     border-radius: 30px;
     padding: 12px 30px;
@@ -234,6 +236,7 @@
   font-family: $family-a-otf-jun-pro;
   padding: 24px 0 0 92px;
   line-height: 1.5em;
+  transition: color .6s .6s;
   @include media(bp767) {
     padding: 7px 0 56px;
     font-size: 9px;
@@ -292,10 +295,11 @@
   width: 592px;
   transform: translateX(-100%);
   @include media(bp767) {
-    width: 127px;
-    top: -8%;
-    right: -60px;
+    width: 64px;
+    top: -12%;
+    right: 0;
     left: initial;
+    transform: translateX(100%);
   }
 }
 

@@ -1,0 +1,57 @@
+@use "../setting/index" as *;
+body {
+  transform: rotateY(0deg);
+  transition: background-color 0.6s 0.6s cubic-bezier(0.11, 0.11, 0.59, 1.3),
+    transform 1s 0s cubic-bezier(0.11, 0.11, 0.59, 1.3);
+}
+body.dark {
+  transform: rotateY(360deg);
+  transition: background-color 0.6s 0.6s cubic-bezier(0.11, 0.11, 0.59, 1.3),
+    transform 1s 0s cubic-bezier(0.11, 0.11, 0.59, 1.3);
+  .user__title p {
+    color: $color-dark-text;
+  }
+  .fv__main__bg::before {
+    background-color: #ab9aba;
+  }
+  .about__text__box {
+    color: #fff;
+  }
+  .price__item__inner {
+    border-color: $color-dark-border;
+  }
+  .price__inner__menu {
+    background-color: $color-dark-border;
+  }
+  .price__text {
+    color: $color-dark-border;
+  }
+  .sub__text {
+    color: #fff;
+  }
+  .flow__item__02__text__wrap {
+    background-color: $color-dark-border;
+  }
+  .flow__item__02__title {
+    text-shadow: 4px 4px 0px $color-dark-border, -4px 4px 0px $color-dark-border,
+      4px -4px 0px $color-dark-border, -4px -4px 0px $color-dark-border,
+      4px 0px 0px $color-dark-border, 0px 4px 0px $color-dark-border,
+      -4px 0px 0px $color-dark-border, 0px -4px 0px $color-dark-border;
+    @include media(bp767) {
+      text-shadow: 2px 2px 0px $color-dark-border,
+        -2px 2px 0px $color-dark-border, 2px -2px 0px $color-dark-border,
+        -2px -2px 0px $color-dark-border, 2px 0px 0px $color-dark-border,
+        0px 2px 0px $color-dark-border, -2px 0px 0px $color-dark-border,
+        0px -2px 0px $color-dark-border;
+    }
+  }
+  .flow__item__sub__text {
+    color: #fff;
+  }
+  .footer__inner::before {
+    background-color: $color-dark-border;
+  }
+  .info__box p {
+    color: #fff;
+  }
+}
