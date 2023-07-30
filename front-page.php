@@ -106,19 +106,82 @@
 
 <section class="price">
   <div class="price__inner">
-    <h2 class="price__title">
-      <span class="price__title__one">P</span>
-      <span class="price__title__one">R</span>
-      <span class="price__title__one">I</span>
-      <span class="price__title__one">C</span>
-      <span class="price__title__one">E</span>
-    </h2>
     <div class="price__container">
-      <div class="price__char__box">
-
+      <div class="price__char__box price__char__box__left">
+        <img class="price__char price__char__01" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_09.png" alt="キャラクター" width="230px" height="268px" loading="lazy">
+        <img class="price__char price__char__02" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_10.png" alt="キャラクター" width="204px" height="247px" loading="lazy">
+        <img class="price__char price__char__03" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_11.png" alt="キャラクター" width="115px" height="217px" loading="lazy">
+      </div>
+      <div class="price__box">
+        <h2 class="price__title">
+        <span class="price__title__one price__title__one__p">
+          <img class="price__img__one price__p" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-p.png" alt="P" width="81px" height="102px" loading="lazy">
+        </span>
+        <span class="price__title__one">
+          <img class="price__img__one price__r" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-r.png" alt="R" width="84px" height="102px" loading="lazy">
+        </span>
+        <span class="price__title__one">
+          <img class="price__img__one price__i" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-i.png" alt="I" width="38px" height="102px" loading="lazy">
+        </span>
+        <span class="price__title__one">
+          <img class="price__img__one price__c" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-c.png" alt="C" width="84px" height="102px" loading="lazy">
+        </span>
+        <span class="price__title__one">
+          <img class="price__img__one price__e" src="<?php echo get_template_directory_uri(); ?>/assets/images/price-e.png" alt="E" width="76px" height="102px" loading="lazy">
+        </span>
+        </h2>
+        <div class="price__item scrollUpText">
+          <div class="price__item__inner">
+            <h3 class="price__inner__menu">基本料金</h3>
+            <p class="price__text">30,000円〜<span>（税別）</span></p>
+          </div>
+          <p class="sub__text">キャラクターデザイン・アレンジ・AI形式の描き起こし・LINEクリエイターマーケット登録サポート作業</p>
+        </div>
+        <div class="price__item scrollUpText">
+          <div class="price__item__inner">
+            <h3 class="price__inner__menu">8個</h3>
+            <p class="price__text">100,000円〜<span>（税別）</span></p>
+          </div>
+        </div>
+        <div class="price__item scrollUpText">
+          <div class="price__item__inner">
+            <h3 class="price__inner__menu">16個</h3>
+            <p class="price__text">200,000円〜<span>（税別）</span></p>
+          </div>
+        </div>
+        <div class="price__item scrollUpText">
+          <div class="price__item__inner">
+            <h3 class="price__inner__menu">24個</h3>
+            <p class="price__text">270,000円〜<span>（税別）</span></p>
+          </div>
+        </div>
+        <div class="price__item scrollUpText">
+          <div class="price__item__inner">
+            <h3 class="price__inner__menu">32個</h3>
+            <p class="price__text">300,000円〜<span>（税別）</span></p>
+          </div>
+        </div>
+        <div class="price__item scrollUpText">
+          <div class="price__item__inner">
+            <h3 class="price__inner__menu">40個</h3>
+            <p class="price__text">330,000円〜<span>（税別）</span></p>
+          </div>
+        </div>
+        <p class="sub__text sub__text__01 scrollUpText">※キャラクターの複雑さによって、費用が変わります。</p>
+        <p class="sub__text scrollUpText">※1スタンプにつき2回まで修正対応をいたします。3回目以降の修正には追加の費用がかかります。</p>
+        <p class="sub__text scrollUpText">※スタンプ数に基本料金を足した金額が制作料金となります。</p>
+      </div>
+      <div class="price__char__box price__char__box__right">
+        <img class="price__char price__char__04" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_09.png" alt="キャラクター" width="230px" height="268px" loading="lazy">
+        <img class="price__char price__char__05" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_10.png" alt="キャラクター" width="204px" height="247px" loading="lazy">
+        <img class="price__char price__char__06" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_11.png" alt="キャラクター" width="115px" height="217px" loading="lazy">
       </div>
     </div>
   </div>
 </section>
+
+<div class="char__bg">
+  <img class="char__bg__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char.png" alt="複数のキャラクター" width="10922px" height="674px" loading="lazy">
+</div>
 
 <?php get_footer(); ?>

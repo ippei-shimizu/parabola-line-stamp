@@ -3,12 +3,15 @@ $bg-light: #dcdddd;
 $bg-light-fv: #c9caca;
 $text-gray: #c9caca;
 $color-text: #595757;
+$color-text-02: #727171;
+$color-border: #9fa0a0;
 
 // font-family
 $family-boloo: "BalooBhainaOdia";
 $family-gorarice-kaiju: "GomariceKaijuMonster";
 $family-APJapanese: "APJapanesefont";
-$familu-shuei: "dnp-shuei-mgothic-std";
+$family-shuei: "dnp-shuei-mgothic-std";
+$family-a-otf-jun-pro: "a-otf-jun-pro"; 
 
 //メディアクエリ
 @mixin media($breakpoint: md) {

@@ -76,7 +76,7 @@
 
 .arrow__box {
   width: fit-content;
-  margin: 0 auto 56px 11%;
+  margin: 0 auto 0 11%;
   position: relative;
   transform: translate(-2rem, -16rem); 
   opacity: 0;
@@ -84,4 +84,9 @@
     display: block;
     height: auto;
   }
+}
+
+.scrollUpText {
+  opacity: 0;
+  transform: translateY(2rem);
 }
