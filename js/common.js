@@ -229,25 +229,31 @@ function switchImages(mode) {
   targetClasses.forEach((targetClass) => {
     const elements = document.querySelectorAll(`.${targetClass}`);
     elements.forEach((el) => {
+      el.classList.add("img-transition");
+
       let src = el.getAttribute("srcset") || el.getAttribute("src");
+      let newSrc;
+
       if (mode === "dark") {
         if (!src.endsWith("-dark.png")) {
-          const newSrc = src.replace(".png", "-dark.png");
-          if (el.getAttribute("srcset")) {
-            el.setAttribute("srcset", newSrc);
-          } else {
-            el.setAttribute("src", newSrc);
-          }
+          newSrc = src.replace(".png", "-dark.png");
         }
       } else {
         if (src.endsWith("-dark.png")) {
-          const newSrc = src.replace("-dark.png", ".png");
+          newSrc = src.replace("-dark.png", ".png");
+        }
+      }
+
+      if (newSrc) {
+        el.style.opacity = 0;
+        setTimeout(() => {
           if (el.getAttribute("srcset")) {
             el.setAttribute("srcset", newSrc);
           } else {
             el.setAttribute("src", newSrc);
           }
-        }
+          el.style.opacity = 1;
+        }, 600);
       }
     });
   });
