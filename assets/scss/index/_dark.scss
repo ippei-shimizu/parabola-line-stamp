@@ -57,4 +57,25 @@ body.dark {
   .info__box p {
     color: #fff;
   }
+  .about__top__sp .about__title {
+    color: #fff;
+  }
+  .dl__title {
+    text-shadow: 4px 4px 0px #7b6394, -4px 4px 0px #7b6394, 4px -4px 0px #7b6394,
+      -4px -4px 0px #7b6394, 4px 0px 0px #7b6394, 0px 4px 0px #7b6394,
+      -4px 0px 0px #7b6394, 0px -4px 0px #7b6394;
+  }
+  .dl__text {
+    color: #7b6394;
+  }
+  .dl__item__text {
+    background-image: url("../assets/images/dl-bg-1-dark.png");
+  }
+  .dl__item {
+    &:nth-child(2) {
+      .dl__item__text {
+        background-image: url("../assets/images/dl-bg-2-dark.png");
+      }
+    }
+  }
 }

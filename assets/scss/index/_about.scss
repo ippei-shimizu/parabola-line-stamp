@@ -194,7 +194,7 @@
   @include media(bp767) {
     display: grid;
     grid-template-columns: 83px 1fr 83px;
-    margin-bottom: 32px;
+    margin-bottom: 0px;
     overflow: hidden;
     padding-top: 64px;
     .about__title {

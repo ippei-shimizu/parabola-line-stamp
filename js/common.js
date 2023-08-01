@@ -104,6 +104,20 @@ window.onload = function () {
     },
   });
 
+  const dlChars = document.querySelectorAll(".dl-img");
+  dlChars.forEach((dlChar, index) => {
+    gsap.to(dlChar, {
+      y: "0%",
+      ease: "back.out(1.5)",
+      duration: 0.3,
+      scrollTrigger: {
+        trigger: dlChar,
+        start: "top+=100px bottom",
+        end: "bottom center",
+      },
+    });
+  });
+
   const priceChars = document.querySelectorAll(".price__char");
   priceChars.forEach((priceChar, index) => {
     gsap.to(priceChar, {
@@ -160,7 +174,7 @@ window.onload = function () {
     },
   });
 
-  const footerChar = document.querySelector(".footer__char");
+  const footerChar = document.querySelector(".footer__char__box");
   gsap.to(footerChar, {
     y: "0%",
     ease: "back.out(1.5)",
@@ -225,6 +239,11 @@ function switchImages(mode) {
     "price__i",
     "price__c",
     "price__e",
+    "para__char__dark",
+    "fuki",
+    "dl-img",
+    "char__bg__img",
+    "dl-qr",
   ];
   targetClasses.forEach((targetClass) => {
     const elements = document.querySelectorAll(`.${targetClass}`);

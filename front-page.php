@@ -201,10 +201,37 @@
 
 <div class="char__bg">
 <picture>
-    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char.png">
-    <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char-sp.png">
+    <source class="char__bg__img" media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char.png">
+    <source class="char__bg__img" media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char-sp.png">
     <img class="char__bg__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-char.png" alt="複数のキャラクター" width="10922px" height="674px" loading="lazy">
 </picture>
+</div>
+
+<div class="dl">
+  <div class="dl__inner">
+    <div class="dl__box">
+      <h2 class="dl__title">LINEスタンプ好評販売中！</h2>
+      <p class="dl__text">↓DLはこちら↓</p>
+      <div class="dl__item__box">
+        <div class="dl__item">
+          <img class="dl-1 dl-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-1.png" alt="キャラクター" width="110px" height="153px" loading="lazy">
+          <a href="https://line.me/S/sticker/23662410" target="_blank" rel="noopener noreferrer" class="dl-img-sp">
+            <img class="dl-1 dl-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-1.png" alt="キャラクター" width="110px" height="153px" loading="lazy">
+          </a>
+          <p class="dl__item__text">いたずらパラビットすずき（オモテ）</p>
+          <img class="dl-qr" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-qr-1.png" alt="QRコード" width="82px" height="82px" loading="lazy">
+        </div>
+        <div class="dl__item">
+          <img class="dl-2 dl-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-2.png" alt="キャラクター" width="110px" height="153px" loading="lazy">
+          <a href="https://line.me/S/sticker/23662429" target="_blank" rel="noopener noreferrer" class="dl-img-sp">
+            <img class="dl-1 dl-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-2.png" alt="キャラクター" width="110px" height="153px" loading="lazy">
+          </a>
+          <p class="dl__item__text">いたずらパラボベアーさいとう（オモテ）</p>
+          <img class="dl-qr" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-qr-2.png" alt="QRコード" width="82px" height="82px" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="arrow__box__wrap">

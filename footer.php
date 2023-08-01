@@ -23,7 +23,12 @@
       </div>
     </div>
   </div>
-  <img class="footer__char" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-char.png" alt="キャラクター" width="990px" height="628px" loading="lazy">
+  <div class="footer__char__box">
+    <a class="p-link" href="https://parabolainc.jp/" target="_blank" rel="noopener noreferrer">
+      <img class="p-link-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/p-link.png" alt="パラボラ" width="143px" height="158px" loading="lazy">
+    </a>
+    <img class="footer__char" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-char.png" alt="キャラクター" width="878px" height="560px" loading="lazy">
+  </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>

@@ -42,7 +42,7 @@ img {
 
 .header {
   position: sticky;
-  top: 0;
+  top: 16px;
   right: 5%;
   z-index: 999;
   height: 0;
@@ -63,7 +63,7 @@ label {
   width: 83px;
   height: 43px;
   background: #3eac4a;
-  margin: 0 5% 0 auto;
+  margin: 0 8px 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,3 +111,57 @@ input:checked + label:after {
   transform: translateX(-100%);
 }
 
+
+.btn {
+  display: flex;
+  align-items: center;
+  margin: 0 24px 0 0;
+  @include media(bp767) {
+    margin-right: 12px;
+  }
+}
+
+.btn__char {
+  width: 76px;
+  height: 65px;
+  position: relative;
+  @include media(bp767) {
+    width: 27px;
+    height: 24px;
+  }
+}
+
+.fuki {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  @include media(bp767) {
+    width: 27px;
+    height: 24px;
+  }
+}
+
+.para__char__dark {
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  display: block;
+  animation: charBalloonRotateCharTab 0.5s steps(2, jump-none) infinite alternate;
+  @include media(bp767) {
+    width: 14px;
+    height: 18px;
+  }
+}
+
+@keyframes charBalloonRotateCharTab {
+  0% {
+    rotate: 1deg;
+  }
+
+  to {
+    rotate: 4deg;
+  }
+}
