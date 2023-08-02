@@ -26,6 +26,26 @@ html {
   src: url("../fonts/APJapanesefont.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "A-OTF-Jun501Pro-Bold";
+  src: url("../fonts/A-OTF-Jun501Pro-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "A-OTF-Jun201Pro-Regular";
+  src: url("../fonts/A-OTF-Jun201Pro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "A-OTF-Jun101Pro-Light.otf";
+  src: url("../fonts/A-OTF-Jun101Pro-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "A-OTF-Jun34Pro-Medium";
+  src: url("../fonts/A-OTF-Jun34Pro-Medium.otf") format("opentype");
+}
+
 body {
   font-family: "APJapanesefont", "dnp-shuei-mgothic-std", "a-otf-jun-pro",
     "BalooBhainaOdia", "GomariceKaijuMonster", sans-serif;

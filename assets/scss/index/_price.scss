@@ -340,13 +340,13 @@
 }
 
 .dl__title {
-  font-family: $family-a-otf-jun-pro;
+  font-family: $family-a-otf-jun-pro-bold;
   font-size: 53px;
   letter-spacing: 0.06em;
   color: #fff;
-  text-shadow: 4px 4px 0px #9fa0a0, -4px 4px 0px #9fa0a0, 4px -4px 0px #9fa0a0,
-    -4px -4px 0px #9fa0a0, 4px 0px 0px #9fa0a0, 0px 4px 0px #9fa0a0,
-    -4px 0px 0px #9fa0a0, 0px -4px 0px #9fa0a0;
+  text-shadow: 3px 3px 0px #9fa0a0, -3px 3px 0px #9fa0a0, 3px -3px 0px #9fa0a0,
+    -3px -3px 0px #9fa0a0, 3px 0px 0px #9fa0a0, 0px 3px 0px #9fa0a0,
+    -3px 0px 0px #9fa0a0, 0px -3px 0px #9fa0a0, 6px 6px 0px #919090ae;
   text-align: center;
   position: relative;
   top: -34px;
@@ -357,7 +357,7 @@
 }
 
 .dl__text {
-  font-family: $family-a-otf-jun-pro;
+  font-family: $family-a-otf-jun-pro-bold;
   font-size: 39px;
   letter-spacing: 0.06em;
   color: #9fa0a0;
