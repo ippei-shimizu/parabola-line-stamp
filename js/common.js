@@ -332,3 +332,27 @@ function flowOneText() {
 
   return mainTl;
 }
+
+function updateImageSrc() {
+  var darkMode = document.body.classList.contains("dark");
+  var imgSp01 = document.querySelector(".dl-img-sp-01");
+  var imgSp02 = document.querySelector(".dl-img-sp-02");
+
+  if (darkMode) {
+    imgSp01.href = "https://line.me/S/sticker/23893470";
+    imgSp02.href = "https://line.me/S/sticker/23893490";
+  } else {
+    imgSp01.href = "https://line.me/S/sticker/23662410";
+    imgSp02.href = "https://line.me/S/sticker/23662429";
+  }
+}
+
+// 初回実行
+updateImageSrc();
+
+// クラスリストの変更を監視する
+var observer = new MutationObserver(updateImageSrc);
+observer.observe(document.body, {
+  attributes: true,
+  attributeFilter: ["class"],
+});

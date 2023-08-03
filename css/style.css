@@ -1188,7 +1188,7 @@ img.about__img__03 {
 }
 @media screen and (max-width:767px) {
   img.about__img__03 {
-    width: 45px;
+    width: 54px;
   }
 }
 
@@ -2184,11 +2184,12 @@ img.about__img__04 {
 }
 @media screen and (max-width:767px) {
   .flow__img__box img.flow__img__03 {
-    width: 44px;
+    width: 49px;
+    right: 0;
   }
   .flow__img__box img.flow__img__04 {
     width: 39px;
-    top: 57px;
+    top: 50px;
     left: -14px;
   }
 }

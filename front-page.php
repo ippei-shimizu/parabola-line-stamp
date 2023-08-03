@@ -94,8 +94,8 @@
       <img class="about__img__01" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_02.png" alt="イラスト" width="331px" height="431px" loading="lazy">
       <img class="about__img__02" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_18.png" alt="イラスト" width="223px" height="321px" loading="lazy">
       <div class="about__img__box">
-        <img class="about__img__03" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_05.png" alt="イラスト" width="164pxpx" height="203px" loading="lazy">
-        <img class="about__img__04" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_04.png" alt="イラスト" width="164pxpx" height="234px" loading="lazy">
+        <img class="about__img__03" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_05.png" alt="イラスト" width="184px" height="203px" loading="lazy">
+        <img class="about__img__04" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_04.png" alt="イラスト" width="164px" height="234px" loading="lazy">
       </div>
     </div>
     <div class="about__bottom">
@@ -214,14 +214,14 @@
       <p class="dl__text">↓DLはこちら↓</p>
       <div class="dl__item__box">
         <div class="dl__item">
-          <a href="https://line.me/S/sticker/23662410" target="_blank" rel="noopener noreferrer" class="dl-img-sp">
+          <a href="https://line.me/S/sticker/23662410" target="_blank" rel="noopener noreferrer" class="dl-img-sp-01 dl-img-sp">
             <img class="dl-1 dl-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-1.png" alt="キャラクター" width="110px" height="153px" loading="lazy">
           </a>
           <p class="dl__item__text">いたずらパラビットすずき（オモテ）</p>
           <img class="dl-qr" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-qr-1.png" alt="QRコード" width="82px" height="82px" loading="lazy">
         </div>
         <div class="dl__item">
-          <a href="https://line.me/S/sticker/23662429" target="_blank" rel="noopener noreferrer" class="dl-img-sp">
+          <a href="https://line.me/S/sticker/23662429" target="_blank" rel="noopener noreferrer" class="dl-img-sp-02 dl-img-sp">
             <img class="dl-1 dl-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-2.png" alt="キャラクター" width="110px" height="153px" loading="lazy">
           </a>
           <p class="dl__item__text">いたずらパラボベアーさいとう（オモテ）</p>
@@ -292,8 +292,8 @@
       <div class="flow__item__02__bottom">
         <p class="flow__item__sub__text">※詳細に関しましてはお問い合わせいただいた際にお伝えいたします。</p>
         <div class="flow__img__box">
-          <img class="flow__img__03" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_05.png" alt="イラスト" width="164px" height="203px" loading="lazy">
-          <img class="flow__img__04" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_04.png" alt="イラスト" width="150px" height="234px" loading="lazy">
+          <img class="flow__img__03" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_05.png" alt="イラスト" width="184px" height="203px" loading="lazy">
+          <img class="flow__img__04" src="<?php echo get_template_directory_uri(); ?>/assets/images/justice_04.png" alt="イラスト" width="164px" height="234px" loading="lazy">
         </div>
       </div>
       <picture>
