@@ -179,17 +179,21 @@
     top: 162px;
   }
   @include media(bp767) {
-    display: none;
+    top: 63px;
+    left: 10px;
   }
   &:hover {
     .p-link-img {
       scale: 1.08;
     }
   }
-  .p-link-img  {
-    transition: scale .4s ease;
+  .p-link-img {
+    transition: scale 0.4s ease;
     @include media(bp1024) {
       width: 100px;
+    }
+    @include media(bp767) {
+      width: 60px;
     }
   }
 }

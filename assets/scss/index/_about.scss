@@ -28,7 +28,8 @@
   }
 }
 
-.about__img__01 {
+img.about__img__01 {
+  animation: charBalloonRotateChar .5s .1s steps(2,jump-none) infinite alternate;
   @include media(bp1100) {
     width: 30%;
   }
@@ -50,7 +51,8 @@
     width: 68px;
   }
 }
-.about__img__03 {
+img.about__img__03 {
+  animation: charBalloonRotateChar .5s .2s steps(2,jump-none) infinite alternate;
   @include media(bp1100) {
     width: 90%;
   }
@@ -61,7 +63,8 @@
     width: 45px;
   }
 }
-.about__img__04 {
+img.about__img__04 {
+  animation: charBalloonRotateChar .5s .3s steps(2,jump-none) infinite alternate;
   @include media(bp1100) {
     width: 90%;
   }
@@ -136,6 +139,7 @@
   transform: rotate(-8deg);
   position: relative;
   top: -35px;
+  animation: charBalloonRotateChar .5s .4s steps(2,jump-none) infinite alternate;
   @include media(bp1024) {
     width: 72px;
   }
@@ -152,6 +156,7 @@
   transform: rotate(14deg);
   position: relative;
   top: 28px;
+  animation: charBalloonRotateChar .5s .5s steps(2,jump-none) infinite alternate;
   @include media(bp1024) {
     width: 82px;
   }

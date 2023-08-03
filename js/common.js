@@ -179,9 +179,10 @@ window.onload = function () {
     y: "0%",
     ease: "back.out(1.5)",
     duration: 0.5,
+    delay: 0.5,
     scrollTrigger: {
       trigger: footerChar,
-      start: "top-=600px bottom",
+      start: "top-=250px bottom",
       end: "bottom center",
     },
   });

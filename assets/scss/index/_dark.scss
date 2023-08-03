@@ -61,9 +61,16 @@ body.dark {
     color: #fff;
   }
   .dl__title {
-    text-shadow: 4px 4px 0px #7b6394, -4px 4px 0px #7b6394, 4px -4px 0px #7b6394,
-      -4px -4px 0px #7b6394, 4px 0px 0px #7b6394, 0px 4px 0px #7b6394,
-      -4px 0px 0px #7b6394, 0px -4px 0px #7b6394;
+    text-shadow: 3px 3px 0px #7b6394, -3px 3px 0px #7b6394, 3px -3px 0px #7b6394,
+      -3px -3px 0px #7b6394, 3px 0px 0px #7b6394, 0px 3px 0px #7b6394,
+      -3px 0px 0px #7b6394, 0px -3px 0px #7b6394,
+      6px 6px 0px rgba(145, 144, 144, 0.6823529412);
+    @include media(bp767) {
+      text-shadow: 2px 2px 0px #7b6394, -2px 2px 0px #7b6394,
+        2px -2px 0px #7b6394, -2px -2px 0px #7b6394, 2px 0px 0px #7b6394,
+        0px 2px 0px #7b6394, -2px 0px 0px #7b6394, 0px -2px 0px #7b6394,
+        4px 4px 0px rgba(145, 144, 144, 0.6823529412);
+    }
   }
   .dl__text {
     color: #7b6394;
