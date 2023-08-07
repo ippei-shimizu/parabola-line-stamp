@@ -12,7 +12,9 @@
       ※チャットのお問い合わせは対応時間がございます。<br>
 　チャット返信が遅れる場合もございます。
       </p>
-      <img class="line__qr__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/line-qr.png" alt="LINE登録QRコード" width="280px" height="280px" loading="lazy">
+      <a href="https://line.me/R/ti/p/@116gmcqz?oat__id=2737673" target="_blank" rel="noopener noreferrer">
+        <img class="line__qr__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/line-qr.png" alt="LINE登録QRコード" width="280px" height="280px" loading="lazy">
+      </a>
       <div class="info__box">
         <img class="logo__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="スタンプ村 product by Parabola" width="245px" height="143px" loading="lazy">
         <div class="info__text__box">
@@ -27,7 +29,7 @@
     <a class="p-link" href="https://parabolainc.jp/" target="_blank" rel="noopener noreferrer">
       <img class="p-link-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/p-link.png" alt="パラボラ" width="143px" height="158px" loading="lazy">
     </a>
-    <img class="footer__char" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-char.png" alt="キャラクター" width="878px" height="560px" loading="lazy">
+    <img class="footer__char" src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-char-01.png" alt="キャラクター" width="878px" height="560px" loading="lazy">
   </div>
 </footer>
 

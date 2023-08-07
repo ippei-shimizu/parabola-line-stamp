@@ -328,9 +328,9 @@
   .char-img {
     display: block;
     position: relative;
-    animation: charBalloonRotateChar 0.5s steps(2, jump-none) infinite alternate;
     &:nth-child(1) {
       right: -12px;
+      animation: charBalloonRotateChar 0.5s steps(2, jump-none) infinite alternate;
       @include media(bp1024) {
         width: 194px;
       }
@@ -339,6 +339,7 @@
       }
     }
     &:nth-child(2) {
+      animation: charBalloonRotateChar 0.5s .2s steps(2, jump-none) infinite alternate;
       @include media(bp1024) {
         width: 230px;
       }
@@ -348,6 +349,7 @@
     }
     &:nth-child(3) {
       left: -12px;
+      animation: charBalloonRotateChar 0.5s .4s steps(2, jump-none) infinite alternate;
       @include media(bp1024) {
         width: 164px;
       }

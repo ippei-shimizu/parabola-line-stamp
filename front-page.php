@@ -2,6 +2,9 @@
 
 <section class="fv">
   <div class="fv__inner">
+<div class="modal">
+  <img class="modal__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/modal.png" alt="オープン日" width="922px" height="685px">
+</div>
     <div class="user__title">
       <p>企業用</p>
       <p>個人用</p>
@@ -53,7 +56,7 @@
             <img class="icon icon-12" src="<?php echo get_template_directory_uri(); ?>/assets/images/hart-2.svg" alt="イラスト" width="25px" height="27px">
             <img class="icon icon-13" src="<?php echo get_template_directory_uri(); ?>/assets/images/kami.svg" alt="イラスト" width="104px" height="60px">
             <img class="icon icon-14" src="<?php echo get_template_directory_uri(); ?>/assets/images/pin.svg" alt="イラスト" width="60px" height="83px">
-            <img class="icon icon-15" src="<?php echo get_template_directory_uri(); ?>/assets/images/sms.svg" alt="イラスト" width="104px" height="92px">
+            <img class="icon icon-15" src="<?php echo get_template_directory_uri(); ?>/assets/images/sms1.svg" alt="イラスト" width="104px" height="92px">
             <img class="icon icon-16" src="<?php echo get_template_directory_uri(); ?>/assets/images/wifi.svg" alt="イラスト" width="70px" height="70px">
             <img class="icon icon-17" src="<?php echo get_template_directory_uri(); ?>/assets/images/hart-ms.svg" alt="イラスト" width="93px" height="73px">
             <img class="icon icon-18" src="<?php echo get_template_directory_uri(); ?>/assets/images/himo.svg" alt="イラスト" width="188px" height="215px">
@@ -217,20 +220,22 @@
           <a href="https://line.me/S/sticker/23662410" target="_blank" rel="noopener noreferrer" class="dl-img-sp-01 dl-img-sp">
             <img class="dl-1 dl-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-1.png" alt="キャラクター" width="110px" height="153px" loading="lazy">
           </a>
-          <p class="dl__item__text">いたずらパラビットすずき（オモテ）</p>
+          <a href="https://line.me/S/sticker/23662410" target="_blank" rel="noopener noreferrer" class="dl__item__text dl__item__text__01">いたずらパラビットすずき（オモテ）</a>
           <img class="dl-qr" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-qr-1.png" alt="QRコード" width="82px" height="82px" loading="lazy">
         </div>
         <div class="dl__item">
           <a href="https://line.me/S/sticker/23662429" target="_blank" rel="noopener noreferrer" class="dl-img-sp-02 dl-img-sp">
             <img class="dl-1 dl-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-2.png" alt="キャラクター" width="110px" height="153px" loading="lazy">
           </a>
-          <p class="dl__item__text">いたずらパラボベアーさいとう（オモテ）</p>
+          <a href="https://line.me/S/sticker/23662429" target="_blank" rel="noopener noreferrer"  class="dl__item__text dl__item__text__02">いたずらパラボベアーさいとう（オモテ）</a>
           <img class="dl-qr" src="<?php echo get_template_directory_uri(); ?>/assets/images/dl-qr-2.png" alt="QRコード" width="82px" height="82px" loading="lazy">
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="over-hidden">
 
 <div class="arrow__box__wrap">
   <div class="arrow__box__02">
@@ -303,6 +308,7 @@
       </picture>
     </div>
   </div>
+</div>
 </div>
 
 <div class="arrow__three">

@@ -1,5 +1,9 @@
 @use "../setting/index" as *;
 
+.over-hidden {
+  overflow: hidden;
+}
+
 .about {
   &__inner {
     max-width: 1980px;
